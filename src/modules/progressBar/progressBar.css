@@ -1,0 +1,43 @@
+.pah .pah139_loaded,
+.pah139_loaded {
+	--pink: #e6006f;
+	--white: #fff;
+	--black: #2e2e33;
+
+	& .petpro__indicator-panel {
+		&.original {
+			display: none !important;
+		}
+	}
+
+	& .petpro__indicator {
+		color: transparent;
+		background-color: var(--black);
+		border-color: var(--black);
+		background-image: url('https://editor-assets.abtasty.com/47297/6154325f37ad11632907871.svg');
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 20px 22px;
+		cursor: pointer;
+
+		&.active {
+			color: var(--pink);
+			background: var(--white);
+			border-color: var(--pink);
+
+			& ~ .petpro__indicator {
+				color: var(--black);
+				background: var(--white);
+				background-size: 0px 0px;
+			}
+		}
+	}
+
+	& .variant.title h1 {
+		font-size: 2rem;
+		font-weight: 900;
+		text-align: center;
+		margin: .75em auto;
+		font-family: 'Museo';
+	}
+}
